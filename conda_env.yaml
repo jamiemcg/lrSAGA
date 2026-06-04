@@ -1,0 +1,9 @@
+name: lrSAGA
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python
+  - gfapy
+  - mbg
+  - networkx
