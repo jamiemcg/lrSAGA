@@ -1,6 +1,5 @@
 # lrSAGA (long-read Single Amplified Genome Assembly)
 
-[![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](http://bioconda.github.io/recipes/lrSAGA/README.html)
 
 
 [Jamie McGowan](https://jamiemcgowan.ie), 2026
@@ -14,16 +13,7 @@
 - mbg
 - networkx
 
-You can install lrSAGA with Conda from the Bioconda channel:
-
-```
-conda create -n lrSAGA -c bioconda conda-forge lrSAGA
-conda activate lrSAGA
-
-lrSAGA.py --help
-```
-
-Alternatively, you can manually install the packages and dependencies using conda with the provided yaml file `conda_env.yaml`, which will create a conda environment called lrSAGA:
+You can install dependencies using conda with the provided yaml file `conda_env.yaml`, which will create a conda environment called lrSAGA:
 
 ```
 git clone https://github.com/jamiemcg/lrSAGA
