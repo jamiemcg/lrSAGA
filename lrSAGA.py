@@ -34,7 +34,7 @@ def main():
 
     optional.add_argument("-v", "--verbose", help="Write verbose log file (appends to <output>.verbose.log)", action="store_true")
 
-    optional.add_argument("--save-intermediate", help="Saves intermediate GFA files to <output>.intermediate.gfa", action="store_true")
+    optional.add_argument("--save-intermediate", help="Saves intermediate GFA files to <output>.intermediate.gfa (only saves the most recent round and overwrites each round)", action="store_true")
 
     optional.add_argument("--tip-len", type=int, help="Remove tips shorter than --tip-len (requires --tip-cov)", required="--tip-cov" in sys.argv)
     optional.add_argument("--tip-cov", type=float, help="Remove tips with coverage less than --tip-cov (requires --tip-len)", required="--tip-len" in sys.argv)
@@ -199,8 +199,7 @@ def main():
         merged_linear_nodes = utils.simplification.manual_merge_linear_paths(graph)
 
         if args.save_intermediate:
-            base, ext = os.path.splitext(args.output)
-            intermediate_filename = base + "_intermediate" + ext
+            intermediate_filename = args.output + ".intermediate.gfa"
 
             print_message("Writing intermediate graph to file:", intermediate_filename)
             graph.to_file(intermediate_filename)
