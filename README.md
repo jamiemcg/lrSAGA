@@ -132,6 +132,7 @@ mv temp.gfa input.gfa
 
 ### Reference
 _Long-read single-cell genomics: resolving chimeras in multiple displacement amplification_
+
 Jamie McGowan, James Lipscombe, Estelle S. Kilias, Tom Barker, Leah Catchpole, Alex Durrant, Naomi Irish, Seanna McTaggart, Sally D. Warring, Karim Gharbi, Thomas A. Richards, Neil Hall, David Swarbreck
 
 bioRxiv 2026.06.11.730069; doi: https://doi.org/10.64898/2026.06.11.730069
